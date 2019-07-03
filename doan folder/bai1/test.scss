@@ -1,0 +1,36 @@
+$grid-number: 12;
+$cl_ss: green;
+$cl_war: red;
+$cl_err: orange;
+
+@function cal-width($n){
+	@return percentage($n/$grid-number)
+}
+
+@mixin gen_name($size_name){
+		@for $i from 1 to $grid-number+1 {
+		.col-#{$size_name}-#{$i}{
+			width: cal-width($i)
+		}
+	}
+}
+
+@each $size_name, $width in (s,400),(m,600),(l,1024),(lg,1400){
+	@media only screen and (min-width:#{$width}px){
+		@include gen-name($size_name);
+	}
+}
+
+.button{
+  text-align: center;
+  padding:10px;
+  border-radius:5px;
+}
+
+@each $state,$color in (ss,$cl_ss),(war,$cl_war),(err,$cl_err){
+	.button-#{$state}{
+		@extend .button;
+		background-color:$color;
+		color: #fff
+	}
+}
