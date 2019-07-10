@@ -1,0 +1,156 @@
+.spacing{
+	margin-top: 50px;
+}
+.hop1, .slider {    
+    background: #290000;
+}
+
+.hopnho5px {
+    height: 5px;
+    background: #76c38f;
+}
+
+.header {
+	display: flex;
+    align-items: center;
+}
+.menu {
+	display: flex;
+	justify-content: center;
+}
+.menu .ul {
+   
+    list-style: none;
+}
+
+.menu .ul .item {
+    text-align: center;
+    font-family: Georgia;
+    color: white;
+    float: left;
+    font-size: 15px;    
+    border-radius: 15px;
+    padding: 7px 16px;
+    cursor: pointer;
+}
+
+.menu .ul .item:hover {
+    background: #76c38f;
+}
+.slider{
+	padding-bottom: 60px;
+}
+.slider .content{
+	display: flex;
+	align-items: center;
+
+}
+.slider-text{
+	color: white;
+    padding-right: 37px;
+}
+.slider-text p{
+    padding: 11px 0px;
+}
+.slider-text button{
+    border-radius: 15px;
+    background-color: #76c38f;
+}
+
+.slider-img{
+	margin-right: auto;
+    margin-left: auto;
+}
+.content-body{
+	padding: 60px 0;
+	background: #660000;
+}
+
+.card-service-content{
+	background: white;
+	text-align: center;
+    padding: 16px 50px;
+}
+.card-service :hover {
+	background: #76c38f;
+	color:white;
+}
+.card-service :hover p{
+	color:white;
+}
+.card-service :hover .service-img{
+	color:black;
+	background: white;
+}
+
+.card-service .service-img{
+	margin: auto;
+	width: 120px;
+	height: 120px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 120px;
+	background: #333333;
+	color: white;
+}
+.card-service h2{
+	text-transform: uppercase;
+}
+
+.card-service p{
+	color: #979797;
+	font-size: 12px;
+}
+
+.divider{
+	position: relative;
+	padding: 25px 0;
+	height:100%;
+}
+
+.divider .line{
+	position: absolute;
+    width: 100%;
+    background: #303030;
+    margin-top: 20px;
+    height:4px;
+}
+
+.divider span{
+	 position: absolute;
+    width: 247px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #303030;
+    color: white;
+    border-radius: 10px;
+    padding: 0px 10px;
+    font-size: 32px;
+}
+
+
+.card-img{
+	position: relative;
+	border: 5px solid white;
+}
+
+.card-img img{
+	width: 100%;
+}
+
+.card-img p{
+	position: absolute;
+    bottom: -10px;
+    background: #00000085;
+    color: white;
+    text-align: center;
+    padding: 6px;
+    width: 100%;
+}
+
+.footer-copyright{
+	background: #2b2b2b;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
